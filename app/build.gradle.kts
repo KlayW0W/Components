@@ -26,6 +26,11 @@ android {
             )
         }
     }
+
+    viewBinding {
+        enable = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -42,7 +47,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(project(":components"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.github.liangjingkanji:BRV:1.6.1")
+    // 基础依赖包，必须要依赖
+    implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")
 }
