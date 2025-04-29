@@ -1,6 +1,5 @@
 package com.wkl.components.exts
 
-import android.app.Activity
 import android.os.Handler
 import android.os.Looper
 import android.view.LayoutInflater
