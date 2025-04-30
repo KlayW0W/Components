@@ -47,7 +47,8 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            register<MavenPublication>("release") {
+            create<MavenPublication>("release") {
+                from(components["release"])
                 groupId = "com.github.KlayW0W"
                 version = versionName
             }
