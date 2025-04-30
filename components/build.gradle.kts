@@ -4,7 +4,7 @@ plugins {
     id("maven-publish")
 }
 
-val versionName = "1.0.4"
+val versionName = "v1.0.1"
 
 android {
     namespace = "com.wkl.components"
@@ -58,6 +58,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
                 groupId = "com.github.KlayW0W"
+                artifactId = "Components"
                 version = versionName
             }
         }
