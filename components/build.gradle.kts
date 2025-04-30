@@ -36,6 +36,14 @@ android {
     viewBinding {
         enable = true
     }
+
+    // 必须添加这个配置块
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
