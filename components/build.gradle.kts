@@ -4,7 +4,7 @@ plugins {
     id("maven-publish")
 }
 
-val versionName = "1.0.1"
+val versionName = "1.0.4"
 
 android {
     namespace = "com.wkl.components"
